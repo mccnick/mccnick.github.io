@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "../src/Components/Pre";
 import Navbar from "./Components/Navbar";
-import Home from "./Components/Home/Home";
-import About from "./Components/About/About";
-import Projects from "./Components/Projects/Projects";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
 import Resume from "./Components/Resume/ResumeNew";
 import Experience from "./Components/Experience/Experience";
