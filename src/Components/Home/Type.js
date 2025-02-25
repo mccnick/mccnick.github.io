@@ -22,9 +22,6 @@ function Type() {
   );
 }
 
-<h1 className="heading-name">
-                I'm
-                <strong className="main-name"> Nick McCullough.</strong>
-              </h1>
+
 
 export default Type;
