@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/nickmccdev/static/css/main.0d4dc762.css",
+    "main.js": "/nickmccdev/static/js/main.c6bac3da.js",
+    "static/js/453.ace21015.chunk.js": "/nickmccdev/static/js/453.ace21015.chunk.js",
+    "static/media/lighterthanair.png": "/nickmccdev/static/media/lighterthanair.90c15a0bc29732bc0054.png",
+    "static/media/bwaircraft.png": "/nickmccdev/static/media/bwaircraft.1c41ec6c3e14ec8df8a9.png",
+    "static/media/profilepic.png": "/nickmccdev/static/media/profilepic.4f28110179e69770e06f.png",
+    "static/media/monalisa.png": "/nickmccdev/static/media/monalisa.ce5ed2632060d96b1f64.png",
+    "static/media/blackbird.png": "/nickmccdev/static/media/blackbird.17ff41bf13edf27f690f.png",
+    "static/media/falconnine.png": "/nickmccdev/static/media/falconnine.838d84a0c02b392f2ee3.png",
+    "static/media/twentyfortyeight.png": "/nickmccdev/static/media/twentyfortyeight.21158133db16ac8b65c5.png",
+    "static/media/johndeere.jpg": "/nickmccdev/static/media/johndeere.df05a18155b5a731417b.jpg",
+    "static/media/Nicholas_McCullough-Resume.pdf": "/nickmccdev/static/media/Nicholas_McCullough-Resume.539ff6e27ae2414f689e.pdf",
+    "static/media/collinsaero.jpg": "/nickmccdev/static/media/collinsaero.9618f8117d12ce4b4e3a.jpg",
+    "static/media/home-bg.jpg": "/nickmccdev/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/avatar.svg": "/nickmccdev/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
+    "static/media/pre.svg": "/nickmccdev/static/media/pre.be69e7a9d85109e7dfa9.svg",
+    "index.html": "/nickmccdev/index.html",
+    "main.0d4dc762.css.map": "/nickmccdev/static/css/main.0d4dc762.css.map",
+    "main.c6bac3da.js.map": "/nickmccdev/static/js/main.c6bac3da.js.map",
+    "453.ace21015.chunk.js.map": "/nickmccdev/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d4dc762.css",
+    "static/js/main.c6bac3da.js"
+  ]
+}
