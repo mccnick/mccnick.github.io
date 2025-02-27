@@ -14,6 +14,15 @@ html {
   --imp-text-color: ##563e5f;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--section-background-color) !important; /* Ensure background applies globally */
+  
+}
+
+
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -286,7 +295,9 @@ rgba(111,71,126,255)
   padding-top: 80px !important;
 }
 
-.home-section {
+/* .home-section {
+  min-height: 100vh;
+  background-size: cover;
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
@@ -294,7 +305,20 @@ rgba(111,71,126,255)
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+} */
+
+.home-section {
+  position: relative;
+  /* Remove or change this: z-index: -1; */
+  z-index: 0;
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; /* ensures the image fills the section */
+  padding: 30px 0 !important;
+  min-height: 100vh; /* makes sure it covers the viewport */
 }
+
 
 .home-content {
   padding: 9rem 0 2rem !important;
@@ -387,6 +411,7 @@ rgba(111,71,126,255)
   text-align: left;
 }
 
+/* home page - text the bottom */
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
@@ -401,6 +426,7 @@ rgba(111,71,126,255)
   padding-inline-start: 0 !important;
 }
 
+/* home page - social icons at the bottom */
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;

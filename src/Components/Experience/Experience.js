@@ -17,13 +17,14 @@ function Experience() {
           <strong className="darker-spiritbox">
             Professional Software Engineering Experience
           </strong>
-          <br></br>
+          <br></br><br></br>
           <small style={{ fontSize: "0.90rem" }}>
-            To support myself during my ISU undergraduate studies, I worked at
+            <p className="lighter-spiritbox">To support myself during my ISU undergraduate studies, I worked at
             least 20 hours per week in all but two semesters.
             <br></br>
+            <br></br>
             In three semesters, I balanced a full-time course load while working
-            40 hours per week.
+            40 hours per week.</p>
           </small>
         </h1>
 

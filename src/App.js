@@ -33,7 +33,8 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <div className="App" id={load ? "no-scroll" : "scroll"}> 
+       {/* <div style={{ backgroundColor: "#241537", minHeight: "100vh" }}> */}
         <Navbar />
         <ScrollToTop />
         <Routes>
@@ -47,6 +48,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      {/* </div> */}
     </Router>
   );
 }

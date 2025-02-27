@@ -35,32 +35,9 @@ function AboutCard() {
             enjoy solving problems, helping people and making cool stuff ☺
             <br />
             <br />
-            Apart from work, school and engineering, some other activities that I love
-            to do:
+            
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImBook /> Always trying to learn something new!
-            </li>
-            <li className="about-activity">
-              <ImSmile /> Spending time with family & doggo
-            </li>
-            <li className="about-activity">
-              <ImYoutube /> Binge watching movies/tv shows ☺
-            </li>
-            <li className="about-activity">
-              <ImAirplane /> Traveling and finding restaurants
-            </li>
-            <li className="about-activity">
-              <ImSpotify /> Jamming to music and going to concerts
-            </li>
-            <li className="about-activity">
-              <ImShield /> Working out
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> FPS Gaming
-            </li>
-          </ul>
+          
           <br />
           <br />
           <br />

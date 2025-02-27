@@ -12,6 +12,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { CgTrophy } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -93,7 +94,7 @@ function NavBar() {
                 to="/awards"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Awards
+                <CgTrophy style={{ marginBottom: "2px" }} /> Awards
               </Nav.Link>
             </Nav.Item>
 
