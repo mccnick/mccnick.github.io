@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GHPAT }}
           repository-name: mccnick/mccnick.github.io
           branch: gh-pages
           folder: build
