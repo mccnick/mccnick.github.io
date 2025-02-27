@@ -15,12 +15,15 @@ function Experience() {
       <Container>
         <h1 className="experience-heading">
           <strong className="darker-spiritbox">
-            Professional Software Engineering Experience:
+            Professional Software Engineering Experience
           </strong>
-          <br />
+          <br></br>
           <small style={{ fontSize: "0.90rem" }}>
-            *Collins Aerospace is a subsidiary of RTX Corporation (Raytheon
-            Technologies)
+            To support myself during my ISU undergraduate studies, I worked at
+            least 20 hours per week in all but two semesters.
+            <br></br>
+            In three semesters, I balanced a full-time course load while working
+            40 hours per week.
           </small>
         </h1>
 
@@ -65,6 +68,11 @@ function Experience() {
             />
           </Col>
         </Row>
+        <br></br><br></br>
+        <strong className="lighter-spiritbox"> <small style={{ fontSize: "0.90rem" }}>
+          *Collins Aerospace is a subsidiary of RTX Corporation (Raytheon
+          Technologies)
+        </small> </strong>
       </Container>
     </Container>
   );

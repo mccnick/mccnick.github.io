@@ -4,7 +4,8 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import profilepic from "../About/profilepic.png";
+// import profilepic from "../About/profilepic.png";
+import oshKosh from "../About/oshKosh.jpeg"
 
 function About() {
   return (
@@ -21,7 +22,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong className="purple">About Me!</strong>
+              <strong className="darker-spiritbox">About Me</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -30,7 +31,12 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={profilepic} alt="about" className="img-fluid" />
+            <img src={oshKosh} alt="about" className="img-fluid" />
+
+            <p className="black"><b> Fun Fact:</b> My nav software was on both of these 
+              helicopters.
+             
+            </p>
           </Col>
         </Row>
         <br />

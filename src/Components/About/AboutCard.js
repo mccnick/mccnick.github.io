@@ -35,7 +35,7 @@ function AboutCard() {
             enjoy solving problems, helping people and making cool stuff ☺
             <br />
             <br />
-            Apart from school and engineering, some other activities that I love
+            Apart from work, school and engineering, some other activities that I love
             to do:
           </p>
           <ul>

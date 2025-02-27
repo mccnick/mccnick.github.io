@@ -901,3 +901,10 @@ rgba(89,50,103,255)
 rgba(111,71,126,255)
 
 */
+
+.homeimage-caption {
+  font-size: 15px;
+  color: #7a5588;
+  margin-top: 5px;
+  text-align: center;
+}

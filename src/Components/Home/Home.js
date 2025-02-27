@@ -5,6 +5,8 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import profilePic from "../Home/profilepic.png";
+//import oshkosh from "./oshKosh.jpeg";
+
 
 function Home() {
   return (
@@ -15,7 +17,8 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Welcome to my <strong className="darker-spiritbox"> React </strong>Porfolio!{" "}
+                Welcome to my{" "}
+                <strong className="darker-spiritbox"> React </strong>Porfolio!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
@@ -34,14 +37,12 @@ function Home() {
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={profilePic}
-               alt="me and my doggo"
+                alt="me and my doggo"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
             </Col>
           </Row>
-
-          
         </Container>
       </Container>
       <Home2 />
