@@ -32,6 +32,8 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Deployment branch
-          folder: build      # Location of static files
-          clean: true        # Ensures old files are removed before deploying
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository-name: mccnick/mccnick.github.io
+          branch: gh-pages
+          folder: build
+          clean: true
