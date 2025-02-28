@@ -42,7 +42,7 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="mailto:nickmcc@iastate.edu"
+                href="mailto:nick@nickmcc.dev"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

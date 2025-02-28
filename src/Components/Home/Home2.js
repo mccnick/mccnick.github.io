@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import isuImage from "../../Assets/Iowa_State_University_seal.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -12,14 +12,29 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
-          {/* Removed the entire Col containing the mentioned text */}
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col>
-        </Row>
+        <Container className="d-flex justify-content-center align-items-center w-100">
+          <Row className="d-flex justify-content-center w-100">
+            <Col
+              md={4}
+              className="d-flex justify-content-center align-items-center myAvtar"
+            >
+              <Tilt>
+                <a
+                  href="https://se.iastate.edu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={isuImage}
+                    className="img-fluid custom-img"
+                    alt="avatar"
+                    style={{ width: "300px", height: "auto" }} // Adjust the width
+                  />
+                </a>
+              </Tilt>
+            </Col>
+          </Row>
+        </Container>
         <Row>
           <Col md={12} className="home-about-social">
             <h1>Follow/Contact me!</h1>
@@ -34,7 +49,7 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              
+
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/mccnick/"
@@ -47,7 +62,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="mailto:mcc-nick@outlook.com"
+                  href="mailto:nick@nickmcc.dev"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
