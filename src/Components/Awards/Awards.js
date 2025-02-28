@@ -79,7 +79,7 @@ function Awards() {
               imgPath={fall21deans}
               isBlog={false}
               title="Engineering Dean's List - Fall 2021"
-              description="Earned Dean's list honors for the Fall 2024 semester for my academic performance while working 40 hours per week 2nd shift."
+              description="Earned Dean's list honors for the Fall 2021 semester for my academic performance while working 40 hours per week 2nd shift."
               //awardLink="https://github.com/mccnick/DensityAltitudeCalculator/tree/main"
                 demoLink="https://www.registrar.iastate.edu/sites/default/files/uploads/info/DeansListF21Updated418.pdf"            />
           </Col>

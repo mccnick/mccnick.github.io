@@ -11,6 +11,7 @@ import monalisa from "../../Assets/Projects/monalisa.png";
 import killBill from "../../Assets/Projects/killBill.png";
 import movieMagnet from "../../Assets/Projects/movieMagnet.png";
 import musicMerch from "../../Assets/Projects/musicMerch.png";
+import portfolio from "../../Assets/Projects/portfolio.png";
 
 
 function Projects() {
@@ -22,6 +23,32 @@ function Projects() {
           <strong className="darker-spiritbox"> My Projects </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {/* ----- project template -----
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={}
+              isBlog={false}
+              title=""
+              description=""
+              ghLink=""
+              demoLink=""
+            />
+          </Col>
+          
+          */}
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={portfolio}
+              isBlog={false}
+              title="React/JavaScript Portfolio Website (What you're seeing)"
+              description="Built a modular React.js portfolio using Bootstrap, React Router, and various design libraries like Particles, etc. Implemented GitHub Actions for automated builds and deployments, ensuring seamless updates with every commit to the main branch to save me time with a busy schedule. The website is mobile-friendly, and uses GitHub pages for my mccnick.github.io standard profile pointing to my nickmcc.dev domain. The website uses modular componenents to add and remove projects, experience, and awards with ease."
+              ghLink="https://github.com/mccnick/mccnick.github.io"
+              demoLink="https://nickmcc.dev/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={musicMerch}
