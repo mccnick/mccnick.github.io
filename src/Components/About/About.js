@@ -40,7 +40,7 @@ function About() {
           </Col>
         </Row>
        
-        <iframe
+        {/* <iframe
           title="Spiritbox - The Fear of Fear"
           style={{ borderRadius: "12px" }}
           src="https://open.spotify.com/embed/album/3UCGVgftlIKV8uOB92cqkk?utm_source=generator&theme=0"
@@ -50,7 +50,7 @@ function About() {
           allowFullScreen
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
-        ></iframe>
+        ></iframe> */}
 
         <br />
         <br />
