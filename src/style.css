@@ -1,17 +1,18 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(17, 16, 16, 0.85), /* Increased opacity */
+    rgba(12, 8, 24, 0.95)   /* Closer to solid */
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
+    rgba(17, 16, 16, 0.9),  /* Increased opacity */
+    rgba(12, 10, 22, 0.98)
   );
 
-  --imp-text-color: ##563e5f;
+
+  --imp-text-color: #563e5f;
 }
 
 html, body {
@@ -311,7 +312,6 @@ rgba(111,71,126,255)
   position: relative;
   /* Remove or change this: z-index: -1; */
   z-index: 0;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover; /* ensures the image fills the section */
