@@ -33,12 +33,25 @@ function About() {
           >
             <img src={oshKosh} alt="about" className="img-fluid" />
 
-            <p className="black"><b> Fun Fact:</b> My nav software was on both of these 
+            <p className="black">
+              <b> Fun Fact:</b> My nav software was on both of these
               helicopters.
-             
             </p>
           </Col>
         </Row>
+       
+        <iframe
+          title="Spiritbox - The Fear of Fear"
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/album/3UCGVgftlIKV8uOB92cqkk?utm_source=generator&theme=0"
+          width="100%"
+          height="352"
+          frameBorder="0"
+          allowFullScreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+
         <br />
         <br />
         <h1 className="project-heading">
