@@ -15,7 +15,7 @@ html {
 }
 
 html, body {
-  height: 100%;
+  height: max-content;
   margin: 0;
   padding: 0;
   background: var(--section-background-color) !important; /* Ensure background applies globally */
@@ -933,4 +933,88 @@ rgba(111,71,126,255)
   color: #7a5588;
   margin-top: 5px;
   text-align: center;
+}
+
+/* ---------------- */
+/* Restore original card size */
+/* Ensure experience card is transparent and interactive */
+.experience-card-view {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Slower transition */
+}
+
+/* Add zoom effect on hover with a smoother animation */
+.experience-card-view:hover {
+  transform: scale(1.10); /* Slightly enlarge the card */
+}
+
+/* Ensure the logo takes up more space */ 
+ .experience-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ } 
+
+.experience-logo {
+  object-fit: contain;
+  align-items: center;
+}
+
+.vertical-timeline-element-content {
+  background: rgba(0, 0, 0, 0) !important; /* Ensures transparency */
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Ensure company title follows lighter-spiritbox theme */
+.experience-card-view .lighter-spiritbox {
+  color: #7a5588 !important; /* "lighter-spiritbox" */
+  font-weight: bold; /* Optional for better visibility */
+}
+
+/* Increase the size of the timeline dates */
+.timeline-date {
+  font-size: 1.7rem !important; /* Adjust */
+  font-weight: bold;
+  color: #7a5588 !important; /* "lighter-spiritbox" */
+  margin-top: -6px; /* Adjust this value if needed */
+
+}
+
+  /* Ensure all dates are center-aligned */
+/* Center-align timeline dates with the dot */
+.timeline-date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Ensures vertical centering */
+  text-align: center;
+  margin-top: -2px; /* Adjust this value if needed */
+}
+
+
+/* Ensure all timeline dates are aligned properly */
+.timeline-date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+/* Adjust left-sided dates */
+.timeline-date-left {
+  align-items: flex-end; /* Push left-side dates towards the center */
+  text-align: right;
+  padding-right: 30px;
+}
+
+/* Adjust right-sided dates */
+.timeline-date-right {
+  align-items: flex-start; /* Push right-side dates towards the center */
+  text-align: left;
+  padding-left: 30px; 
 }
