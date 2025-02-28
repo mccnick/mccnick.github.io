@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1798a335.css",
-    "main.js": "/static/js/main.6dccff26.js",
+    "main.js": "/static/js/main.7c533ff4.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/killBill.png": "/static/media/killBill.a034d6d424acae3cd4c6.png",
     "static/media/musicMerch.png": "/static/media/musicMerch.61660cae3e142892f0e4.png",
@@ -11,6 +11,7 @@
     "static/media/movieMagnet.png": "/static/media/movieMagnet.d5afa135bdde48464c06.png",
     "static/media/bwaircraft.png": "/static/media/bwaircraft.1c41ec6c3e14ec8df8a9.png",
     "static/media/fall21deans.png": "/static/media/fall21deans.374c1177f6787b9b17af.png",
+    "static/media/portfolio.png": "/static/media/portfolio.6e32636c9c52b339ddfc.png",
     "static/media/fall24deans.png": "/static/media/fall24deans.6868ef23f3b1a8b40054.png",
     "static/media/profilepic.png": "/static/media/profilepic.4f28110179e69770e06f.png",
     "static/media/arthurACollins.png": "/static/media/arthurACollins.a806bfbe4fb07fc468ae.png",
@@ -28,11 +29,11 @@
     "static/media/pre.svg": "/static/media/pre.be69e7a9d85109e7dfa9.svg",
     "index.html": "/index.html",
     "main.1798a335.css.map": "/static/css/main.1798a335.css.map",
-    "main.6dccff26.js.map": "/static/js/main.6dccff26.js.map",
+    "main.7c533ff4.js.map": "/static/js/main.7c533ff4.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1798a335.css",
-    "static/js/main.6dccff26.js"
+    "static/js/main.7c533ff4.js"
   ]
 }
