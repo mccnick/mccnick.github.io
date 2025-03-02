@@ -6,7 +6,8 @@ const Tesseract = () => {
   const mountRef = useRef(null);
 
   useEffect(() => {
-    if (!mountRef.current) return;
+    const mount = mountRef.current;
+    if (!mount) return;
 
     let scene, camera, renderer, lines;
     let animationFrameId;
@@ -24,7 +25,7 @@ const Tesseract = () => {
       // Set up the renderer
       renderer = new THREE.WebGLRenderer({ alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
-      mountRef.current.appendChild(renderer.domElement);
+      mount.appendChild(renderer.domElement);
 
       // Define vertices of a 4D Tesseract (hypercube)
       for (let w = -1; w <= 1; w += 2) {
@@ -38,14 +39,7 @@ const Tesseract = () => {
       }
 
       // Define edges by connecting vertices
-      for (let i = 0; i < vertices.length; i++) {
-        for (let j = i + 1; j < vertices.length; j++) {
-          let diff = vertices[i].reduce((sum, v, idx) => sum + Math.abs(v - vertices[j][idx]), 0);
-          if (diff === 2) {
-            edges.push([i, j]);
-          }
-        }
-      }
+      edges = getTesseractEdges(vertices);
 
       // Create geometry for the edges
       const material = new THREE.LineBasicMaterial({ color: 0x7a5588 });
@@ -57,14 +51,15 @@ const Tesseract = () => {
       new OrbitControls(camera, renderer.domElement);
 
       // Resize event
-      function onWindowResize() {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-      }
       window.addEventListener("resize", onWindowResize);
 
       animate(); // Start animation
+    }
+
+    function onWindowResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
     }
 
     function animate() {
@@ -88,7 +83,19 @@ const Tesseract = () => {
       renderer.render(scene, camera);
     }
 
-    // 4D Rotation (X-W and Y-Z planes)
+    function getTesseractEdges(vertices) {
+      let edges = [];
+      for (let i = 0; i < vertices.length; i++) {
+        for (let j = i + 1; j < vertices.length; j++) {
+          let diff = vertices[i].reduce((sum, v, idx) => sum + Math.abs(v - vertices[j][idx]), 0);
+          if (diff === 2) {
+            edges.push([i, j]);
+          }
+        }
+      }
+      return edges;
+    }
+
     function rotate4D(vertices, angleXW, angleYZ) {
       const cosXW = Math.cos(angleXW);
       const sinXW = Math.sin(angleXW);
@@ -108,7 +115,6 @@ const Tesseract = () => {
       });
     }
 
-    // Project 4D vertices to 3D space
     function project4DTo3D(vertices) {
       return vertices.map(([x, y, z, w]) => {
         const scale = 2 / (2 + w); // Perspective projection
@@ -118,11 +124,10 @@ const Tesseract = () => {
 
     init(); // Initialize Three.js scene
 
-    // Cleanup function to remove event listeners & animation
     return () => {
       cancelAnimationFrame(animationFrameId);
-      mountRef.current?.removeChild(renderer.domElement);
-      window.removeEventListener("resize", () => {});
+      mount?.removeChild(renderer.domElement);
+      window.removeEventListener("resize", onWindowResize);
     };
   }, []);
 
