@@ -1,24 +1,23 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-//import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import profilePic from "../Home/profilepic.png";
-//import oshkosh from "./oshKosh.jpeg";
-
+import Tesseract from "../Tesseract/Tesseract"; // Import the fixed Tesseract component
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
+        <Tesseract /> {/* Renders behind the main content */}
         <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Welcome to my{" "}
-                <strong className="darker-spiritbox"> React </strong>Porfolio!{" "}
+                <strong className="darker-spiritbox"> React </strong>Portfolio!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
@@ -51,4 +50,3 @@ function Home() {
 }
 
 export default Home;
-
