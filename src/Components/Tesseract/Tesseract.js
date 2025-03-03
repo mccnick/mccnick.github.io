@@ -66,7 +66,7 @@ const Tesseract = () => {
       animationFrameId = requestAnimationFrame(animate);
 
       // Apply 4D Rotation (X-W and Y-Z planes)
-      vertices = rotate4D(vertices, 0.01, 0.005);
+      vertices = rotate4D(vertices, 0.005, 0.005);
       const projectedVertices = project4DTo3D(vertices);
 
       // Update edges
@@ -97,8 +97,8 @@ const Tesseract = () => {
     }
 
     function rotate4D(vertices, angleXW, angleYZ) {
-      const cosXW = Math.cos(angleXW);
-      const sinXW = Math.sin(angleXW);
+      const cosXW = Math.cos(angleXW - 0.005);
+      const sinXW = Math.sin(angleXW - 0.005);
       const cosYZ = Math.cos(angleYZ);
       const sinYZ = Math.sin(angleYZ);
 
