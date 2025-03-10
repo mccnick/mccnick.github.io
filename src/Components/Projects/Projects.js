@@ -43,7 +43,7 @@ function Projects() {
               imgPath={portfolio}
               isBlog={false}
               title="React/JavaScript Portfolio Website (What you're seeing)"
-              description="Built a modular React.js portfolio using Bootstrap, React Router, and various design libraries like Particles, etc. Implemented GitHub Actions for automated builds and deployments, ensuring seamless updates with every commit to the main branch to save me time with a busy schedule. The website is mobile-friendly, and uses GitHub pages for my mccnick.github.io standard profile pointing to my nickmcc.dev domain. The website uses modular componenents to add and remove projects, experience, and awards with ease."
+              description="Built a modular React.js portfolio using Bootstrap, React Router, and various design libraries like Particles, etc. Implemented GitHub workflow .yml for automated builds and deployments, ensuring seamless updates with every commit to the main branch to save me time with a busy schedule. The website is mobile-friendly, and uses GitHub pages for my mccnick.github.io standard profile pointing to my nickmcc.dev domain. The website uses modular componenents to add and remove projects, experience, and awards with ease."
               ghLink="https://github.com/mccnick/mccnick.github.io"
               demoLink="https://nickmcc.dev/"
             />

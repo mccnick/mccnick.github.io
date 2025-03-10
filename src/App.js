@@ -34,7 +34,7 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}> 
-       {/* <div style={{ backgroundColor: "#241537", minHeight: "100vh" }}> */}
+       {/* <div style={{ backgroundColor: "#241537", minHeight: "100vh" }}> COMMENT: THIS WILL CHANGE THE BACKGROUND TO PURPLE*/} 
         <Navbar />
         <ScrollToTop />
         <Routes>
