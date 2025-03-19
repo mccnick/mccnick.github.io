@@ -6,6 +6,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 // import profilepic from "../About/profilepic.png";
 import oshKosh from "../About/oshKosh.jpeg"
+import spiritbox from "../About/Spiritbox_Album_Cover.JPG"
 
 function About() {
   return (
@@ -40,20 +41,21 @@ function About() {
           </Col>
         </Row>
        
-        {/* <iframe
-          title="Spiritbox - The Fear of Fear"
-          style={{ borderRadius: "12px" }}
-          src="https://open.spotify.com/embed/album/3UCGVgftlIKV8uOB92cqkk?utm_source=generator&theme=0"
-          width="100%"
-          height="352"
-          frameBorder="0"
-          allowFullScreen
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe> */}
+        <Col
+            md={6}
+            style={{  margin: "0 auto", paddingTop: "120px", paddingBottom: "50px" }}
+            className="about-img"
+          >
+            <img src={spiritbox} alt="about" className="img-fluid" />
+            <br />
+            <p className="black">
+            <br />
+              <b> The color theme of my portfolio is inspired by this EP from my favorite band. </b> 
+            
+            </p>
+           
+          </Col>
 
-        <br />
-        <br />
         <h1 className="project-heading">
           Technical <strong className="lighter-spiritbox"> Skills </strong>
         </h1>

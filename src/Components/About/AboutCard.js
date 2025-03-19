@@ -1,13 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-// import { ImPointRight } from "react-icons/im";
-// import { ImSpotify } from "react-icons/im";
-// import { ImBook } from "react-icons/im";
-// import { ImSmile } from "react-icons/im";
-// import { ImAirplane } from "react-icons/im";
-// import { ImYoutube } from "react-icons/im";
-// import { ImShield } from "react-icons/im";
-
 
 function AboutCard() {
   return (
