@@ -25,8 +25,8 @@ function Contact() {
         "service_ccz3ksd", // EmailJS Service ID
         "template_q97o1yr", // EmailJS Template ID
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
           message: formData.message,
         },
         "sx1fYbntoLY6yOQmN" // EmailJS Public Key
