@@ -1,28 +1,28 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.85), /* Increased opacity */
-    rgba(12, 8, 24, 0.95)   /* Closer to solid */
+    rgba(17, 16, 16, 0.85),
+    /* Increased opacity */ rgba(12, 8, 24, 0.95) /* Closer to solid */
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.9),  /* Increased opacity */
-    rgba(12, 10, 22, 0.98)
+    rgba(17, 16, 16, 0.9),
+    /* Increased opacity */ rgba(12, 10, 22, 0.98)
   );
-
 
   --imp-text-color: #563e5f;
 }
 
-html, body {
+html,
+body {
   height: max-content;
   margin: 0;
   padding: 0;
-  background: var(--section-background-color) !important; /* Ensure background applies globally */
-  
+  background: var(
+    --section-background-color
+  ) !important; /* Ensure background applies globally */
 }
-
 
 .purple {
   color: var(--imp-text-color) !important;
@@ -212,7 +212,6 @@ rgba(111,71,126,255)
   z-index: 1;
 }
 
-
 /* Spiritbox Hex:
 #7a5588 -washed out, whiter
 rgb(122,85,136)
@@ -317,10 +316,9 @@ rgba(111,71,126,255)
   background-size: cover; /* ensures the image fills the section */
   /* padding: 30px 0 !important; */
   /* min-height: 100vh; makes sure it covers the viewport */
- /* Increase the height to prevent cutoff */
-    position: relative;
+  /* Increase the height to prevent cutoff */
+  position: relative;
 }
-
 
 .home-content {
   padding: 9rem 0 2rem !important;
@@ -664,7 +662,7 @@ rgba(111,71,126,255)
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(122,85,136, 0.637) !important;
+  border: 1.7px solid rgba(122, 85, 136, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -699,7 +697,7 @@ rgba(111,71,126,255)
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(89,50,103, 0.883) !important;
+  border: 2.2px solid rgba(89, 50, 103, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -873,18 +871,18 @@ rgba(111,71,126,255)
 
 .company-list {
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   flex-wrap: nowrap;
-  overflow: hidden; 
-  width: 100%; 
+  overflow: hidden;
+  width: 100%;
   position: relative;
 }
 
 .company-container {
-  flex: 0 0 33.33%; 
+  flex: 0 0 33.33%;
   margin-right: 10px;
-  position: relative; 
-  z-index: 2; 
+  position: relative;
+  z-index: 2;
 }
 
 .company-container:last-child {
@@ -907,12 +905,12 @@ rgba(111,71,126,255)
 }
 
 .experience-heading {
-  padding-bottom: 50px; 
+  padding-bottom: 50px;
 }
 
 /* Adjust the bottom padding of the entire section if necessary */
 .experience-section {
-  padding-bottom: 150px; 
+  padding-bottom: 150px;
 }
 
 /* Spiritbox Hex:
@@ -950,16 +948,15 @@ rgba(111,71,126,255)
 
 /* Add zoom effect on hover with a smoother animation */
 .experience-card-view:hover {
-  transform: scale(1.10); /* Slightly enlarge the card */
+  transform: scale(1.1); /* Slightly enlarge the card */
 }
 
-/* Ensure the logo takes up more space */ 
- .experience-logo-container {
+/* Ensure the logo takes up more space */
+.experience-logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
- 
- } 
+}
 
 .experience-logo {
   object-fit: contain;
@@ -984,10 +981,9 @@ rgba(111,71,126,255)
   font-weight: bold;
   color: #7a5588 !important; /* "lighter-spiritbox" */
   margin-top: -6px; /* Adjust this value if needed */
-
 }
 
-  /* Ensure all dates are center-aligned */
+/* Ensure all dates are center-aligned */
 /* Center-align timeline dates with the dot */
 .timeline-date-container {
   display: flex;
@@ -998,12 +994,11 @@ rgba(111,71,126,255)
   margin-top: -2px; /* Adjust this value if needed */
 }
 
-
 /* Ensure all timeline dates are aligned properly */
 .timeline-date-container {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   text-align: center;
 }
 
@@ -1018,7 +1013,7 @@ rgba(111,71,126,255)
 .timeline-date-right {
   align-items: flex-start; /* Push right-side dates towards the center */
   text-align: left;
-  padding-left: 30px; 
+  padding-left: 30px;
 }
 
 .custom-img {
@@ -1056,25 +1051,25 @@ rgba(111,71,126,255)
 }
 
 /* --------- Contact Page Styling --------- */
-
 .contact-section {
   position: relative !important;
-  padding-top: 0 !important;
-  /* Remove padding-top to allow flexbox centering */
-  padding-bottom: 0 !important;
+  padding-top: 60px !important;
+  /* Add padding to account for navbar on mobile */
+  padding-bottom: 20px !important;
+  /* Add some bottom padding for spacing */
   background: transparent !important;
   min-height: 100vh !important;
-  /* Ensure it takes up the full viewport height */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* Center content vertically */
+  justify-content: flex-start;
+  /* Change to flex-start to avoid clipping at the top */
   align-items: center;
-  /* Center content horizontally */
 }
 
 .contact-container {
   text-align: center;
+  width: 100%;
+  /* Ensure it takes full width on mobile */
 }
 
 .contact-card-view {
@@ -1121,4 +1116,53 @@ rgba(111,71,126,255)
   padding: 10px 20px !important;
 }
 
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .contact-section {
+    padding-top: 80px !important;
+    /* More padding on mobile to account for navbar */
+    justify-content: flex-start !important;
+    /* Ensure content starts from the top */
+    min-height: auto !important;
+    /* Allow the section to grow with content */
+  }
+
+  .contact-container {
+    padding: 0 15px;
+    /* Add horizontal padding for better spacing */
+  }
+
+  .contact-card-view {
+    max-width: 100% !important;
+    /* Take full width on mobile */
+    min-height: auto !important;
+    /* Allow height to adjust based on content */
+    padding: 20px !important;
+    /* Reduce padding for smaller screens */
+  }
+
+  .project-heading {
+    font-size: 1.5rem !important;
+    /* Reduce heading size on mobile */
+  }
+
+  .contact-container p {
+    font-size: 0.9rem !important;
+    /* Reduce paragraph text size */
+  }
+
+  .custom-input {
+    font-size: 1rem !important;
+    /* Reduce input font size */
+    padding: 8px !important;
+    /* Reduce input padding */
+  }
+
+  .contact-card-view .btn-primary {
+    font-size: 1rem !important;
+    /* Reduce button font size */
+    padding: 8px 16px !important;
+    /* Reduce button padding */
+  }
+}
 /* --------- Chat Page Styling --------- */
