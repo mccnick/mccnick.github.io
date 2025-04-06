@@ -191,7 +191,7 @@ rgba(111,71,126,255)
 }
 
 .nav-link {
-  padding: 0.8rem 1rem !important;
+  padding: 0.5rem 1rem !important;
 }
 
 @media (max-width: 767px) {
@@ -202,7 +202,7 @@ rgba(111,71,126,255)
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
 .navbar-nav .nav-item a {
@@ -1054,3 +1054,71 @@ rgba(111,71,126,255)
 ::-webkit-scrollbar-corner {
   background: black; /* Or match your site's background color */
 }
+
+/* --------- Contact Page Styling --------- */
+
+.contact-section {
+  position: relative !important;
+  padding-top: 0 !important;
+  /* Remove padding-top to allow flexbox centering */
+  padding-bottom: 0 !important;
+  background: transparent !important;
+  min-height: 100vh !important;
+  /* Ensure it takes up the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.contact-card-view {
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.95 !important;
+  transition: all 0.5s ease 0s !important;
+  padding: 45px !important;
+  border-radius: 15px !important;
+  max-width: 600px !important;
+  min-height: 675px !important;
+  margin: 0 auto !important;
+}
+
+.contact-card-view:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.custom-input {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(122, 85, 136, 0.637) !important;
+  color: white !important;
+  border-radius: 5px !important;
+  font-size: 1.2rem !important;
+  padding: 12px !important;
+}
+
+.custom-input::placeholder {
+  color: #a9a9a9 !important;
+  opacity: 1 !important;
+}
+
+.custom-input:focus {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: #6f477e !important;
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.contact-card-view .btn-primary {
+  font-size: 1.2rem !important;
+  padding: 10px 20px !important;
+}
+
+/* --------- Chat Page Styling --------- */

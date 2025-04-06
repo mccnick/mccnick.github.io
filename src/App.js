@@ -8,6 +8,9 @@ import Footer from "./Components/Footer";
 import Resume from "./Components/Resume/ResumeNew";
 import Experience from "./Components/Experience/Experience";
 import Awards from "./Components/Awards/Awards";
+import Contact from "./Components/Contact/Contact";
+import Chat from "./Components/Chat/Chat";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -33,8 +36,8 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}> 
-       {/* <div style={{ backgroundColor: "#241537", minHeight: "100vh" }}> COMMENT: THIS WILL CHANGE THE BACKGROUND TO PURPLE*/} 
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        {/* <div style={{ backgroundColor: "#241537", minHeight: "100vh" }}> COMMENT: THIS WILL CHANGE THE BACKGROUND TO PURPLE*/}
         <Navbar />
         <ScrollToTop />
         <Routes>
@@ -44,7 +47,9 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/awards" element={<Awards />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>

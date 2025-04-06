@@ -3,15 +3,15 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-import { MdOutlineWorkHistory  } from "react-icons/md";
+import { MdOutlineWorkHistory } from "react-icons/md";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import {
-
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser
+  AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+import { CgFileDocument, CgMail } from "react-icons/cg";
 import { CgTrophy } from "react-icons/cg";
 
 function NavBar() {
@@ -65,15 +65,16 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-            <Nav.Link
-              as={Link}
-              to="/experience"
-              onClick={() => updateExpanded(false)}
-            >
-              <MdOutlineWorkHistory style={{ marginBottom: "2px" }} /> Experience
-              {/* Replace AiFillCode with your chosen icon */}
-            </Nav.Link>
-          </Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <MdOutlineWorkHistory style={{ marginBottom: "2px" }} />{" "}
+                Experience
+                {/* Replace AiFillCode with your chosen icon */}
+              </Nav.Link>
+            </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
@@ -108,7 +109,26 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgMail style={{ marginBottom: "2px" }} /> Contact
+              </Nav.Link>
+            </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/chat"
+                onClick={() => updateExpanded(false)}
+              >
+                <IoChatboxEllipsesOutline style={{ marginBottom: "2px" }} />{" "}
+                Chat!
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
