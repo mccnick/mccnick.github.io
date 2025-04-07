@@ -13,7 +13,7 @@ function Type() {
             "and outer space, with software engineering.",
             "This rotating cube is actually a tesseract...",
             "built with Three.js :)",
-            "Click & Drag to rotate, Zoom in to see inside.",
+            "To the left of this text: Click & Drag to rotate, Zoom in to see inside.",
             "The doggo's name is Ollie :)",
             "Feel free to explore. Thanks for visiting!",
             "Restarting in...",
