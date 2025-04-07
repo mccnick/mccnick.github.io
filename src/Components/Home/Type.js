@@ -22,6 +22,7 @@ function Type() {
           "Ollie :)",
           "Feel free to explore.",
           "Thanks for visiting!",
+          "Restarting in 3, 2, 1..",
         ],
         autoStart: true,
         loop: true,
