@@ -371,7 +371,6 @@ rgba(111,71,126,255)
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
-    position: absolute !important;
   }
   .Typewriter__cursor {
     display: none !important;
