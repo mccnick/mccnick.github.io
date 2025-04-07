@@ -13,9 +13,7 @@ import Type from "./typeAbout"; // Import the Type component
 function About() {
   return (
     <Container fluid className="about-section position-relative">
-      <div className="tesseract-container">
-       
-      </div>
+      <div className="tesseract-container"></div>
       <Particle />
 
       <Container className="about-content position-relative">
@@ -32,7 +30,9 @@ function About() {
               <strong className="darker-spiritbox">About Me</strong>
             </h1>
             {/* Add the type functionality here */}
-            <Type/>
+            <div style={{ padding: 50, textAlign: "center" }}>
+              <Type />
+            </div>
             <Aboutcard />
           </Col>
           <Col

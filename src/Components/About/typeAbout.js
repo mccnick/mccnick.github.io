@@ -8,7 +8,7 @@ function Type2() {
       options={{
         strings: [
           "Software Engineer",
-          "Aerospace Enthusiast",
+          "Aerospace Nerd",
           "Problem Solver",
           "Constant Learner",
           "Team Leader",
