@@ -18,6 +18,9 @@ function About() {
 
       <Container className="about-content position-relative">
         <Row style={{ justifyContent: "center", padding: "10px" }}>
+          <div style={{ padding: 50, textAlign: "center" }}>
+            <Type />
+          </div>
           <Col
             md={7}
             style={{
@@ -30,9 +33,7 @@ function About() {
               <strong className="darker-spiritbox">About Me</strong>
             </h1>
             {/* Add the type functionality here */}
-            <div style={{ padding: 50, textAlign: "center" }}>
-              <Type />
-            </div>
+
             <Aboutcard />
           </Col>
           <Col
