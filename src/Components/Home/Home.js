@@ -33,12 +33,17 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 100 }}>
               <img
                 src={profilePic}
                 alt="me and my doggo"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{
+                  maxHeight: "400px",
+                  float: "right",
+                  paddingRight: "20px",
+                  marginTop: "60px",
+                }}
               />
             </Col>
           </Row>

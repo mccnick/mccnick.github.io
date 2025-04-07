@@ -6,22 +6,30 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Software Engineer",
-          "Aerospace Enthusiast",
-          "Problem Solver",
-          "Constant Learner",
-          "Doggo Lover",
+          "Hello :) Let's chat.",
+          "These are my favorite",
+          "music albums & EPs.",
+          "I wanted to combine",
+          "my passion for music",
+          "and outer space, with",
+          "software engineering.",
+          "This rotating cube",
+          "is actually a tesseract",
+          "built with Three.js :)",
+          "Zoom in to see",
+          "Click & Drag to rotate",
+          "The doggo's name is",
+          "Ollie :)",
+          "Feel free to explore.",
+          "Thanks for visiting!",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
-
-        
+        typingSpeed: 65,
+        deleteSpeed: 55,
       }}
     />
   );
 }
-
-
 
 export default Type;
