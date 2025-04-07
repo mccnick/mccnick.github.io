@@ -18,9 +18,10 @@ function About() {
 
       <Container className="about-content position-relative">
         <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <div style={{ padding: 50, textAlign: "center" }}>
+          <div className="w-100 text-center p-4">
             <Type />
           </div>
+
           <Col
             md={7}
             style={{
