@@ -48,7 +48,7 @@ const Tesseract = () => {
 
       edges = getTesseractEdges(vertices);
 
-      const material = new THREE.LineBasicMaterial({ color: 0x7a5588 });
+      const material = new THREE.LineBasicMaterial({ color: 0x000000 });
       const geometry = new THREE.BufferGeometry();
       lines = new THREE.LineSegments(geometry, material);
       scene.add(lines);
