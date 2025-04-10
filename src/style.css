@@ -1031,6 +1031,7 @@ rgba(111,71,126,255)
 .custom-img {
   /* max-width: 400px; Adjust as needed */
   height: auto;
+  padding-top: 300px;
 }
 
 /* ------- tesseract --------*/
@@ -1177,4 +1178,16 @@ rgba(111,71,126,255)
     /* Reduce button padding */
   }
 }
+
+/* Add this to your profile picture column */
+.profile-pic-col {
+  position: relative;
+}
+
+.profile-pic {
+  position: absolute;
+  right: 20px;
+  top: 60px; /* Adjust this value as needed */
+}
+
 /* --------- Chat Page Styling --------- */
