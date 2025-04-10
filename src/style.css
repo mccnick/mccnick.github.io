@@ -1034,6 +1034,13 @@ rgba(111,71,126,255)
   padding-top: 300px;
 }
 
+@media (max-width: 767px) {
+  .custom-img {
+    padding-top: 50px; /* Reduced padding for mobile */
+    /* Or remove it completely: padding-top: 0; */
+  }
+}
+
 /* ------- tesseract --------*/
 
 #tesseract-container {
