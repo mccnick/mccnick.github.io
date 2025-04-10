@@ -5,10 +5,12 @@ import * as THREE from "three";
 const Tesseract = () => {
   const mountRef = useRef(null);
 
+  // useEffect is a React hook that runs after the component mounts
   useEffect(() => {
     const mount = mountRef.current;
     if (!mount) return;
-
+    
+    // Initialize variables for the scene, camera, renderer, and lines
     let scene, camera, renderer, lines;
     let animationFrameId;
     let vertices = [];
@@ -16,6 +18,7 @@ const Tesseract = () => {
     let innerCubeVertexIndices = [];
     let innerCubeFaces = [];
 
+    // Initialize the scene, camera, and renderer
     function init() {
       scene = new THREE.Scene();
       camera = new THREE.PerspectiveCamera(
@@ -24,8 +27,9 @@ const Tesseract = () => {
         0.1,
         1000
       );
-      camera.position.z = 7.5;
+      camera.position.z = 7.5; // Set camera position
 
+      // Set up the renderer
       renderer = new THREE.WebGLRenderer({ alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
       mount.appendChild(renderer.domElement);
@@ -61,7 +65,9 @@ const Tesseract = () => {
       animate();
     }
 
+    // Function to add inner cube faces with textures
     function addInnerCubeFaces() {
+      // Define the indices of the vertices for each face of the inner cube
       const faceIndices = [
         [0, 1, 3, 2], // -x face
         [4, 5, 7, 6], // +x face
@@ -71,7 +77,10 @@ const Tesseract = () => {
         [1, 3, 7, 5], // +z face
       ];
 
+      // Create a texture loader using Three.js
       const textureLoader = new THREE.TextureLoader();
+
+      // URLs for the textures/images
       const urls = [
         "https://lastfm.freetls.fastly.net/i/u/71c800a49e50f959a2cdf227bdd722cf", // 3 - Spiritbox Tsunami Sea
         "https://lastfm.freetls.fastly.net/i/u/14005e5fe7376e7ee71f042db0372014", // 1 - Spiritbox TFOF

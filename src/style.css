@@ -374,7 +374,7 @@ rgba(111,71,126,255)
 /* On mobile, set a fixed height for the typewriter container */
 @media (max-width: 767px) {
   .typewriter-container {
-    height: 4.2em !important; /* Add !important to ensure it takes precedence */
+    height: 8em !important; /* Add !important to ensure it takes precedence */
     overflow: hidden;
     display: flex;
     align-items: flex-start;
