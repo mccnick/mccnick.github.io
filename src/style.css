@@ -1,3 +1,115 @@
+/* MOBILE-SPECIFIC-CSS */
+@media (max-width: 767px) {
+  .profile-pic {
+    position: absolute; /* Change from block to absolute */
+    top: 0; /* Anchor it to the top of the column */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Offset for true centering */
+    margin: 0; /* Remove auto margins */
+    float: none; /* Already set, keep it */
+    display: block; /* Keep for rendering */
+    max-width: 100%; /* Ensure it fits */
+  }
+  .profile-pic-col {
+    position: relative;
+    height: 200px; /* Set a fixed height for the column, adjust as needed */
+  }
+  .contact-section {
+    padding-top: 80px !important;
+    /* More padding on mobile to account for navbar */
+    justify-content: flex-start !important;
+    /* Ensure content starts from the top */
+    min-height: auto !important;
+    /* Allow the section to grow with content */
+  }
+  .contact-container {
+    padding: 0 15px;
+    /* Add horizontal padding for better spacing */
+  }
+  .contact-card-view {
+    max-width: 100% !important;
+    /* Take full width on mobile */
+    min-height: auto !important;
+    /* Allow height to adjust based on content */
+    padding: 20px !important;
+    /* Reduce padding for smaller screens */
+  }
+  .project-heading {
+    font-size: 1.5rem !important;
+    /* Reduce heading size on mobile */
+  }
+  .contact-container p {
+    font-size: 0.9rem !important;
+    /* Reduce paragraph text size */
+  }
+  .custom-input {
+    font-size: 1rem !important;
+    /* Reduce input font size */
+    padding: 8px !important;
+    /* Reduce input padding */
+  }
+  .contact-card-view .btn-primary {
+    font-size: 1rem !important;
+    /* Reduce button font size */
+    padding: 8px 16px !important;
+    /* Reduce button padding */
+  }
+  .custom-img {
+    padding-top: 50px; /* Reduced padding for mobile */
+    /* Or remove it completely: padding-top: 0; */
+  }
+  .resume-left {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .resume-right {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+  .about-img {
+    padding-top: 0 !important;
+  }
+  .tech-icons {
+    margin: 10px !important;
+  }
+  .footer-copywright {
+    text-align: center !important;
+  }
+  .footer-body {
+    text-align: center !important;
+  }
+  .navbar {
+    padding: 1rem 2rem !important;
+    font-size: 1.4rem !important;
+    background-color: #181a27 !important;
+  }
+  .navbar-nav .nav-item a::after {
+    display: none !important;
+  }
+  .nav-link {
+    padding: 0.7rem 1rem !important;
+  }
+  .Typewriter__wrapper {
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    width: 100%;
+  }
+  .Typewriter__cursor {
+    display: none !important;
+  }
+  .typewriter-container {
+    height: 8em !important; /* Add !important to ensure it takes precedence */
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+  }
+  .myAvtar {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+}
+
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -165,16 +277,6 @@ rgba(111,71,126,255)
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
-  .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: #181a27 !important;
-  }
-  .navbar-nav .nav-item a::after {
-    display: none !important;
-  }
-}
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -192,12 +294,6 @@ rgba(111,71,126,255)
 
 .nav-link {
   padding: 0.5rem 1rem !important;
-}
-
-@media (max-width: 767px) {
-  .nav-link {
-    padding: 0.7rem 1rem !important;
-  }
 }
 
 .navbar-nav .nav-item {
@@ -371,37 +467,9 @@ rgba(111,71,126,255)
   font-size: 1.8em !important;
 }
 
-/* On mobile, set a fixed height for the typewriter container */
-@media (max-width: 767px) {
-  .typewriter-container {
-    height: 8em !important; /* Add !important to ensure it takes precedence */
-    overflow: hidden;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    line-height: 1.5 !important;
-    width: 100%;
-  }
-
-  .Typewriter__cursor {
-    display: none !important;
-  }
-}
-
 .myAvtar {
   justify-content: center !important;
   padding-top: 10em !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
 }
 
 .home-about-section {
@@ -518,16 +586,6 @@ rgba(111,71,126,255)
 .footer-body {
   z-index: 1;
   text-align: center !important;
-}
-
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
-  .footer-body {
-    text-align: center !important;
-  }
 }
 
 .footer h3 {
@@ -684,12 +742,6 @@ rgba(111,71,126,255)
   transition: all 0.4s ease 0s !important;
 }
 
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
-}
-
 /* Spiritbox Hex:
 #7a5588 -washed out, whiter
 rgb(122,85,136)
@@ -728,11 +780,6 @@ rgba(111,71,126,255)
   padding-left: 1px !important;
 }
 
-@media (max-width: 767px) {
-  .about-img {
-    padding-top: 0 !important;
-  }
-}
 /* --------- */
 /* Resume */
 /* --------- */
@@ -759,17 +806,6 @@ rgba(111,71,126,255)
   padding-left: 80px !important;
 }
 
-@media (max-width: 767px) {
-  .resume-left {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-
-  .resume-right {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-}
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
@@ -1034,13 +1070,6 @@ rgba(111,71,126,255)
   padding-top: 300px;
 }
 
-@media (max-width: 767px) {
-  .custom-img {
-    padding-top: 50px; /* Reduced padding for mobile */
-    /* Or remove it completely: padding-top: 0; */
-  }
-}
-
 /* ------- tesseract --------*/
 
 #tesseract-container {
@@ -1136,56 +1165,6 @@ rgba(111,71,126,255)
   padding: 10px 20px !important;
 }
 
-/* Mobile-specific adjustments */
-@media (max-width: 768px) {
-  .contact-section {
-    padding-top: 80px !important;
-    /* More padding on mobile to account for navbar */
-    justify-content: flex-start !important;
-    /* Ensure content starts from the top */
-    min-height: auto !important;
-    /* Allow the section to grow with content */
-  }
-
-  .contact-container {
-    padding: 0 15px;
-    /* Add horizontal padding for better spacing */
-  }
-
-  .contact-card-view {
-    max-width: 100% !important;
-    /* Take full width on mobile */
-    min-height: auto !important;
-    /* Allow height to adjust based on content */
-    padding: 20px !important;
-    /* Reduce padding for smaller screens */
-  }
-
-  .project-heading {
-    font-size: 1.5rem !important;
-    /* Reduce heading size on mobile */
-  }
-
-  .contact-container p {
-    font-size: 0.9rem !important;
-    /* Reduce paragraph text size */
-  }
-
-  .custom-input {
-    font-size: 1rem !important;
-    /* Reduce input font size */
-    padding: 8px !important;
-    /* Reduce input padding */
-  }
-
-  .contact-card-view .btn-primary {
-    font-size: 1rem !important;
-    /* Reduce button font size */
-    padding: 8px 16px !important;
-    /* Reduce button padding */
-  }
-}
-
 /* Add this to your profile picture column */
 .profile-pic-col {
   position: relative;
@@ -1197,11 +1176,4 @@ rgba(111,71,126,255)
   top: 60px; /* Adjust this value as needed */
 }
 
-@media (max-width: 767px) {
-  .profile-pic {
-    float: none;
-    margin: 0 auto;
-    display: block;
-  }
-}
 /* --------- Chat Page Styling --------- */
