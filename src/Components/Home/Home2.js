@@ -25,7 +25,7 @@ function Home2() {
               >
                 <img
                   src={isuImage}
-                  className="img-fluid custom-img"
+                  className="img-fluid isu-image"
                   alt="avatar"
                   style={{ width: "300px", height: "auto" }} // Adjust the width
                 />
