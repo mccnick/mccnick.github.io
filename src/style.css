@@ -1197,4 +1197,11 @@ rgba(111,71,126,255)
   top: 60px; /* Adjust this value as needed */
 }
 
+@media (max-width: 767px) {
+  .profile-pic {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+}
 /* --------- Chat Page Styling --------- */
