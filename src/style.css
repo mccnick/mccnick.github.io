@@ -1,9 +1,14 @@
 /* MOBILE-SPECIFIC-CSS */
 @media (max-width: 767px) {
+  .heading,
+  .heading-name {
+    white-space: nowrap;
+    font-size: 1.2rem !important; /* Adjust as needed to fit on one line */
+  }
   /* profile pic with Ollie on home page */
-  .profile-pic { 
-    position: absolute; 
-    top: 0; 
+  .profile-pic {
+    position: absolute;
+    top: 0;
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Offset for true centering */
     margin: 0; /* Remove auto margins */
@@ -11,7 +16,7 @@
     display: block; /* Keep for rendering */
     max-width: 100%; /* Ensure it fits */
   }
-  
+
   .profile-pic-col {
     position: relative;
     height: 200px; /* Set a fixed height for the column, adjust as needed */
@@ -57,7 +62,7 @@
     /* Reduce button padding */
   }
   .isu-image {
-    padding-top: 50px !important;/* Reduced padding for mobile */
+    padding-top: 50px !important; /* Reduced padding for mobile */
     /* Or remove it completely: padding-top: 0; */
   }
   .resume-left {
@@ -1179,3 +1184,31 @@ rgba(111,71,126,255)
 }
 
 /* --------- Chat Page Styling --------- */
+
+.tesseract-desktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.tesseract-mobile-row {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .tesseract-desktop {
+    display: none;
+  }
+  .tesseract-mobile-row {
+    display: block;
+    margin-top: 20px;
+  }
+  .tesseract-mobile {
+    width: 100%;
+    height: 300px; /* Adjust as needed based on your Tesseract component */
+  }
+}
