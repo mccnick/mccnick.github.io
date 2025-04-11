@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Home2 from "./Home2";
-import Type from "./Type";
+import TypeWriter from "./TypeWriter";
 import profilePic from "../Home/profilepic.png";
 import Tesseract from "../Tesseract/Tesseract"; // Import the fixed Tesseract component
 
@@ -29,7 +29,7 @@ function Home() {
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+                <TypeWriter/>
               </div>
             </Col>
 
