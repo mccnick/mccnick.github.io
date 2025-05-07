@@ -12,6 +12,8 @@ import killBill from "../../Assets/Projects/killBill.png";
 import movieMagnet from "../../Assets/Projects/movieMagnet.png";
 import musicMerch from "../../Assets/Projects/musicMerch.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
+import gridAI from "../../Assets/Projects/grid-AI.png";
+
 
 
 function Projects() {
@@ -38,20 +40,18 @@ function Projects() {
           
           */}
 
-          {/*
-          
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={}
-              isBlog={false}
-              title="GridAI Map Box Development"
-              description="In Progress (Senior Design Project). Currently developing the next generation of Grid Energy tools and capabilities. Specifically focusing on mapping an existing GridAI back-end with nodes and ensuring scalability with a responsive front-end design. Giving homeowners, DSO, ISO, DERA's enough real-time and historical data points to make better daily decisions with their energy system(s). Tech Stack: React, TypeScript, ReactGL, Deck.GL, Web Workers, Docker, Kubernetes"
-              ghLink=""
-              demoLink=""
-            />
-          </Col>
-          
-          */}
+          {
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={gridAI}
+                isBlog={false}
+                title="GridAI Map Box Development"
+                description="In Progress (Senior Design Project). Leading a software team of 5 to update the user interface for a robust grid management back-end. Currently developing the next generation of Grid Management Energy software tools and capabilities. Individually, focusing on mapping an existing GridAI back-end with nodes and ensuring scalability with a responsive front-end design using a mapbox with React, Typescript and Deck.GL. Giving homeowners, DSO, ISO, DERA's enough real-time and historical data points to make better daily decisions with their energy system(s). Tech Stack: React, TypeScript, ReactGL, Deck.GL, Web Workers, Docker, Kubernetes"
+                demoLink="https://sddec25-17.sd.ece.iastate.edu/"
+                ghLink="https://sddec25-17.sd.ece.iastate.edu/"
+              />
+            </Col>
+          }
 
           <Col md={4} className="project-card">
             <ProjectCard
