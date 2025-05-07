@@ -1,8 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
+// import { CgWebsite } from "react-icons/cg";
 // import { BsGithub } from "react-icons/bs";
+import { BsLink45Deg } from "react-icons/bs";
 
 function AwardsCards(props) {
   return (
@@ -27,7 +28,7 @@ function AwardsCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite /> &nbsp;
+            <BsLink45Deg /> &nbsp;
             {"Link"}
           </Button>
         )}
