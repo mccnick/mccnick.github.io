@@ -87,7 +87,8 @@ const Tesseract = () => {
         "https://lastfm.freetls.fastly.net/i/u/e296b13bf8e04473f06c832f737abb39", // 4 - Bad Omens
         "https://lastfm.freetls.fastly.net/i/u/40fd90dc8716cf544b14a2b9e846541e", // 2 - BMTH Sempiternal
         "https://lastfm.freetls.fastly.net/i/u/e7b531006b41eb9bb864362291962f39", // side left - Take Me Back to Eden
-        "https://lastfm.freetls.fastly.net/i/u/ad8049d7f0611cebaa5f321bf4736a2e", // side right - blanke - needs flipped
+        "https://lastfm.freetls.fastly.net/i/u/770x0/ca59461ca9b6b14cfc9c1183dbd82a8b.jpg#ca59461ca9b6b14cfc9c1183dbd82a8b", // even in arcadia
+        // "https://lastfm.freetls.fastly.net/i/u/ad8049d7f0611cebaa5f321bf4736a2e", // side right - blanke - needs flipped
       ];
 
       const rotationFixes = [Math.PI, 0, 0, Math.PI, Math.PI / 2, Math.PI / 2];
