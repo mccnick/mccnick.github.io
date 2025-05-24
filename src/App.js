@@ -9,7 +9,7 @@ import Resume from "./Components/Resume/ResumeNew";
 import Experience from "./Components/Experience/Experience";
 import Awards from "./Components/Awards/Awards";
 import Contact from "./Components/Contact/Contact";
-import Chat from "./Components/Chat/Chat";
+// import Chat from "./Components/Chat/Chat";
 
 import {
   BrowserRouter as Router,
@@ -48,7 +48,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/chat" element={<Chat />} />
+          {/* <Route path="/chat" element={<Chat />} /> */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

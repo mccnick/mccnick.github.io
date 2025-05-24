@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { MdOutlineWorkHistory } from "react-icons/md";
-import { IoChatboxEllipsesOutline } from "react-icons/io5";
+// import { IoChatboxEllipsesOutline } from "react-icons/io5";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -118,7 +118,7 @@ function NavBar() {
                 <CgMail style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
-
+{/* 
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -128,7 +128,9 @@ function NavBar() {
                 <IoChatboxEllipsesOutline style={{ marginBottom: "2px" }} />{" "}
                 Chat!
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
+
+            {/* --------------------------------------------------------------------------*/}
           </Nav>
         </Navbar.Collapse>
       </Container>
