@@ -87,10 +87,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Particle from "../Particle";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
 import ExperienceCard from "./ExperienceCard";
+import homesteadersLogo from "./homesteaders.jpg";
 import collinsLogo from "./collinsaero.jpg";
 import johndeereLogo from "./johndeere.jpg";
 
@@ -98,6 +102,14 @@ import johndeereLogo from "./johndeere.jpg";
 const experiences = [
   {
     id: 1,
+    imgPath: homesteadersLogo,
+    company: "Homesteaders Life Company",
+    position: "Software Developer, Full-Time",
+    duration: "Jan 2026 - Present",
+    team: "Application Delivery, Core Platforms Team",
+  },
+  {
+    id: 2,
     imgPath: collinsLogo,
     company: "Collins Aerospace / RTX",
     position: "Software Engineer Intern",
@@ -105,7 +117,7 @@ const experiences = [
     team: "Military Avionics Performance Software",
   },
   {
-    id: 2,
+    id: 3,
     imgPath: collinsLogo,
     company: "Collins Aerospace / RTX",
     position: "Software Engineer, Part-Time senior year",
@@ -113,7 +125,7 @@ const experiences = [
     team: "Military Avionics & Helicopter Engineering",
   },
   {
-    id: 3,
+    id: 4,
     imgPath: collinsLogo,
     company: "Collins Aerospace / RTX",
     position: "Software Engineer Co-Op",
@@ -121,7 +133,7 @@ const experiences = [
     team: "Military Avionics Navigation Software",
   },
   {
-    id: 4,
+    id: 5,
     imgPath: johndeereLogo,
     company: "John Deere",
     position: "Software Engineer Intern",
@@ -164,7 +176,6 @@ function Experience() {
                     {exp.duration}
                   </span>
                   <div className="timeline-date-line"></div>
-                  {/* Add this line */}
                 </div>
               }
               iconStyle={{ background: "#563e5f", color: "#fff" }}

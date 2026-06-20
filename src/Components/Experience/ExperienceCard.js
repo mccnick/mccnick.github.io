@@ -24,10 +24,11 @@
 // export default ExperienceCard;
 
 // --------------------------------------------------------------
+
 import React from "react";
 import Card from "react-bootstrap/Card";
 
-function ExperienceCard({ imgPath, company, position, team }) {
+function ExperienceCard({ imgPath, company, position, team, location }) {
   return (
     <Card className="experience-card-view">
       <div className="experience-logo-container">
@@ -42,6 +43,12 @@ function ExperienceCard({ imgPath, company, position, team }) {
         <Card.Title className="lighter-spiritbox">{company}</Card.Title>
         <Card.Text className="lighter-spiritbox">
           <strong>Position:</strong> {position}
+          {location && (
+            <>
+              <br />
+              <strong>Location:</strong> {location}
+            </>
+          )}
           <br />
           <strong>Team:</strong> {team}
         </Card.Text>

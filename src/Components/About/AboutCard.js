@@ -7,8 +7,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            <br /> I'm currently a rising Senior at Iowa State University
-            majoring in Software Engineering, graduating in December 2025. My
+            <br /> I graduated Iowa State University in December 2025, with a major in Software Engineering. My
             first year at Iowa State I majored in Aerospace Engineering, and
             enjoyed the programming projects so much I made the switch to
             Software Engineering.
